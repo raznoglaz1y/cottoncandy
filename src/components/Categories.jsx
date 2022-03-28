@@ -6,6 +6,7 @@ import CategoryItem from "./CategoryItem";
 const Container = styled.div`
   display: flex;
   padding: 20px;
+  margin-top: -150px;
   justify-content: space-between;
 `;
 
