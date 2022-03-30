@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 const Title = styled.h2`
   padding: 20px;
   margin-left: 20px;
+  color: #AC4157;
 `;
 
 const Items = styled.div`

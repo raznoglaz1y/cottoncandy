@@ -24,7 +24,7 @@ const Info = styled.div`
   justify-content: center;
 `;
 const Title = styled.h1`
-  color: #261d28;
+  color: #f5f3f5;
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -32,10 +32,17 @@ const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   font-weight: 600;
-  border: 0.5px solid #261d28;
+  border: 0.5px solid #f5f3f5;
   background-color: transparent;
-  color: #261d28;
+  color: #f5f3f5;
   cursor: pointer;
+
+  &:hover {
+    background-color: #9b479d;
+    color: #f5f3f5;
+	 border: 0.5px solid #f5f3f5;
+
+  }
 `;
 
 const CategoryItem = ({ item }) => {

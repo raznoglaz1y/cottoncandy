@@ -79,9 +79,14 @@ const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   border: 0.5px solid #9b479d;
-  background-color: #F5F3F5;
+  background-color: #f5f3f5;
   color: #9b479d;
   cursor: pointer;
+
+  &:hover {
+    background-color: #9b479d;
+    color: #f5f3f5;
+  }
 `;
 
 const Slider = () => {
