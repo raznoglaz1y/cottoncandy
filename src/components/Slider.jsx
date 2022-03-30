@@ -79,7 +79,7 @@ const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   border: 0.5px solid #9b479d;
-  background-color: #fff;
+  background-color: #F5F3F5;
   color: #9b479d;
   cursor: pointer;
 `;
