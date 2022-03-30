@@ -12,17 +12,18 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5)
     ),
     url("https://a.lmcdn.ru/bs2/3/21/w_hp_1_preppy-style.jpg") center;
+  background-size: cover;
 `;
 
 const Wrapper = styled.div`
-  width: 40%;
+  width: 25%;
   padding: 20px;
   background-color: #f5f3f5;
 `;
 
 const Form = styled.form`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -34,7 +35,7 @@ const Title = styled.h1`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 20px 10px 0 0;
+  margin: 10px 0;
   padding: 10px;
   border: 0.5px solid #9b479d;
   color: #9b479d;
@@ -43,7 +44,9 @@ const Input = styled.input`
 const Button = styled.button`
   width: 40%;
   padding: 10px;
-  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 14px;
   border: 0.5px solid #9b479d;
   background-color: #f5f3f5;
   color: #9b479d;
@@ -54,6 +57,15 @@ const Button = styled.button`
     color: #f5f3f5;
   }
 `;
+
+const Link = styled.a`
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: underline;
+  cursor: pointer;
+`;
+
 const Login = () => {
   return (
     <Container>
@@ -62,8 +74,10 @@ const Login = () => {
         <Form>
           <Input placeholder="Email" type={"email"} />
           <Input placeholder="Password" type={"password"} />
+          <Button>START SHOPPING</Button>
+          <Link>Forgot your password?</Link>
+          <Link>Create new account</Link>
         </Form>
-        <Button>START SHOPPING</Button>
       </Wrapper>
     </Container>
   );

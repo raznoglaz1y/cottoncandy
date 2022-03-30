@@ -12,6 +12,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5)
     ),
     url("https://a.lmcdn.ru/bs2/3/21/w_hp_1_preppy-style.jpg") center;
+	 background-size: cover;
 `;
 
 const Wrapper = styled.div`

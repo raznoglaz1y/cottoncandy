@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 
 
 const App = () => {
-  return <Home />;
+  return <Login />;
 };
 
 export default App;
