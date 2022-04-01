@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   width: 100vw;
@@ -12,13 +13,15 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5)
     ),
     url("https://a.lmcdn.ru/bs2/3/21/w_hp_1_preppy-style.jpg") center;
-	 background-size: cover;
+  background-size: cover;
 `;
 
 const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: #f5f3f5;
+
+  ${mobile({ width: "80%" })};
 `;
 
 const Form = styled.form`

@@ -4,11 +4,14 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
+
+  ${mobile({ padding: "10px" })};
 `;
 
 const Title = styled.h1`
@@ -21,6 +24,8 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  ${mobile({ padding: "15px" })};
 `;
 
 const TopButton = styled.button`
@@ -40,9 +45,13 @@ const TopButton = styled.button`
     border: 0.5px solid
       ${(props) => (props.type === "filled" ? "#9b479d" : "#f5f3f5")};
   }
+
+  ${mobile({ fontSize: "16px", padding: "5px" })};
 `;
 
-const TopTextContainer = styled.div``;
+const TopTextContainer = styled.div`
+  ${mobile({ display: "none" })};
+`;
 
 const TopText = styled.span`
   margin: 0 10px;
@@ -53,6 +62,8 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({ flexDirection: "column" })};
 `;
 
 const Info = styled.div`
@@ -62,6 +73,8 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({ flexDirection: "column" })};
 `;
 
 const ProductDetail = styled.div`
@@ -91,7 +104,9 @@ const ProductColor = styled.div`
   background-color: ${(props) => props.color};
 `;
 
-const ProductSize = styled.span``;
+const ProductSize = styled.span`
+  ${mobile({ marginBottom: "5px" })};
+`;
 
 const PriceDetail = styled.span`
   flex: 1;
@@ -106,6 +121,8 @@ const AmountContainer = styled.div`
   align-items: center;
   font-weight: 500;
   margin-bottom: 20px;
+
+  ${mobile({ marginTop: "30px" })};
 `;
 
 const Amount = styled.span`
@@ -114,13 +131,17 @@ const Amount = styled.span`
   justify-content: center;
   width: 40px;
   height: 30px;
-  margin: 0 5px;
+  margin: 0px 5px;
   border: 1px solid #9b479d;
+
+  ${mobile({ margin: "5px 15px" })};
 `;
 
 const ProductPrice = styled.span`
   font-size: 20px;
   font-weight: 300;
+
+  ${mobile({ marginBottom: "20px" })};
 `;
 
 const Hr = styled.hr`

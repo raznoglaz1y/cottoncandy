@@ -12,11 +12,6 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.h2`
-  padding: 20px;
-  color: #AC4157;
-`;
-
 const Items = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +22,6 @@ const Products = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>Popular products</Title>
         <Items>
           {popularProducts.map((item) => (
             <Product item={item} key={item.id} />

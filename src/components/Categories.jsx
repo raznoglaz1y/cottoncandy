@@ -2,38 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import { categories } from "../data";
 import CategoryItem from "./CategoryItem";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
-  margin-top: -150px;
-`;
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Title = styled.h2`
-  padding: 20px;
-  margin-left: 20px;
-  color: #AC4157;
-`;
-
-const Items = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
+
+  ${mobile({ padding: "0px", flexDirection: "column" })};
 `;
 
 const Categories = () => {
   return (
     <Container>
-      <Wrapper>
-        <Title>Categories</Title>
-        <Items>
           {categories.map((item) => (
             <CategoryItem item={item} key={item.id} />
           ))}
-        </Items>
-      </Wrapper>
     </Container>
   );
 };
